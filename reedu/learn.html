@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>학습 | REEDU</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-top">
+        <a class="logo" href="index.html"></a>
+        <nav class="main-nav">
+          <a href="index.html">홈</a>
+          <a href="jobs.html">직무</a>
+          <a href="courses.html">코스</a>
+          <a href="learn.html">학습</a>
+          <a href="index.html#resources">자료</a>
+        </nav>
+      </div>
+      <div class="container header-content">
+        <h1>웹 기반 학습 코스</h1>
+      </div>
+    </header>
+
+    <main class="app-layout container">
+      <aside class="sidebar">
+        <div class="sidebar-title">코스 선택</div>
+        <nav class="lesson-nav" id="lessonNav"></nav>
+      </aside>
+
+      <section class="content-panel">
+        <div class="progress-bar">
+          <span id="progressText">진행도: 0/0</span>
+          <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
+
+        <article class="lesson-card" id="lessonCard">
+          <div class="lesson-header">
+            <div>
+              <p class="lesson-topic" id="lessonTopic"></p>
+              <h2 class="lesson-title" id="lessonTitle"></h2>
+            </div>
+            <span class="lesson-tag" id="lessonTag"></span>
+          </div>
+          <p class="lesson-description" id="lessonDescription"></p>
+
+          <div class="lesson-points" id="lessonPoints"></div>
+
+          <div class="quiz-section" id="quizSection"></div>
+
+          <div class="lesson-actions">
+            <button class="btn secondary" id="prevButton">이전</button>
+            <button class="btn primary" id="nextButton">다음</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+
+    <script src="learn.js"></script>
+  </body>
+</html>
